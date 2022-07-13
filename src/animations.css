@@ -1,0 +1,26 @@
+.appear {
+  /* opacity starting point */
+  opacity: 0;
+  /* the animation name we created above */
+  animation-name: fadeIn;
+  /* setting the duration and delay */
+  animation-duration: 3s;
+  animation-delay: 2s;
+  /* without this once the elements appear ( fadeIn ) they will go away this makes sure the end state stays the same */
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  50% {
+    transform: translate(0);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
