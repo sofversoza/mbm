@@ -34,6 +34,17 @@
   transform: scale(1.3);
 }
 
+/* animation for marquee to continously move left */
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-3000vw);
+  }
+}
+
 /* HOVER WOBBLE EFFECT START */
 @-webkit-keyframes wobble-vertical-on-hover {
   16.65% {

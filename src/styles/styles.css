@@ -19,16 +19,43 @@ body {
   margin-bottom: 1%;
 }
 
-.artist-name {
-  /* font-family: 'anisette-std', sans-serif; */
-  /* font-weight: 300; */
-  color: #d6c3ad;
+.home-title-dark {
+  font-family: medusa, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
-  font-size: 30px;
-  margin-top: 3%;
-  letter-spacing: 2px;
+  color: #46332f;
+  font-size: 110px;
+  margin-right: 2%;
+  margin-top: -11%;
+  margin-bottom: 1%;
 }
 
+.artist-name {
+  color: #d6c3ad;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 3%;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}
+
+.artist-name-dark {
+  color: #46332f;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 3%;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}
+
+.work-title {
+  font-family: "montserrat", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
 /* fonts end */
 
 .section {
@@ -53,6 +80,10 @@ body {
   color: #fff;
 }
 
+.bg-matisse {
+  background-image: url(src/assets/matisse/m10.jpeg);
+}
+
 .bg-cover {
   background-size: cover;
   background-position: center;
@@ -61,6 +92,10 @@ body {
 
 .bg-black {
   background-color: black;
+}
+
+.pushup {
+  margin-bottom: 10%;
 }
 
 .logo {
@@ -101,13 +136,30 @@ body {
   position: relative;
 }
 
-/* animation for marquee to continously move left */
-@keyframes moveLeft {
-  0% {
-    transform: translateX(0);
-  }
+.info-cont {
+  position: absolute;
+  bottom: 15%;
+  min-width: 102%;
+}
 
-  100% {
-    transform: translateX(-3000vw);
-  }
+.info-cont p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.row {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  padding: 0 20px 0 20px;
+}
+
+.column img {
+  height: 400px;
+  width: 295px;
+  border-radius: 1%;
 }
