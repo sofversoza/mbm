@@ -6,6 +6,31 @@ body {
   line-height: 1.5;
 }
 
+/* fonts */
+.home-title {
+  font-family: medusa, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #d6c3ad;
+  font-size: 110px;
+  margin-right: 2%;
+  margin-top: -10%;
+  margin-bottom: 1%;
+}
+
+.artist-name {
+  /* font-family: 'anisette-std', sans-serif; */
+  /* font-weight: 300; */
+  color: #d6c3ad;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 3%;
+  letter-spacing: 2px;
+}
+
+/* fonts end */
+
 .section {
   min-height: 98vh;
   margin-top: 10px;
@@ -32,6 +57,10 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.bg-black {
+  background-color: black;
 }
 
 .logo {
