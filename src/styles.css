@@ -9,9 +9,9 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
-  /* flex enables flexbox ( modern layout mode in css ), used with margin:auto below in .container for centering elements horizontally & vertically */
+  /* used with margin:auto below in .container for centering elements horizontally & vertically */
   display: flex;
-  /* because we're using position:absolute on our marquee element, its position needs to be in relation to this section */
+  /* we're using position:absolute on our marquee element, its position needs to be in relation to this section */
   position: relative;
 }
 
@@ -35,13 +35,48 @@ body {
 .logo {
   display: block;
   text-align: center;
-  margin-top: -51%;
+  margin-top: -73.5%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 470px;
+  max-width: 485px;
   mix-blend-mode: overlay;
 }
 
 .logo img {
   width: 100%;
+}
+
+.marquee {
+  position: absolute;
+  top: 74vh;
+  left: 0;
+  width: 100%;
+  font-size: 12vw;
+  font-family: anisette-std, sans-serif;
+  font-weight: 300;
+  mix-blend-mode: overlay;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.marquee span {
+  /* shorthand ( brief ) version of the animation css rule ( animations name, how long it'll take, repeat infinite times )*/
+  animation: moveLeft 200s infinite;
+  /* will ensure the text stays all on the same line */
+  white-space: nowrap;
+  /* our span is inline by default, so here we tell it to be block */
+  display: block;
+  /* this will let us add our animation */
+  position: relative;
+}
+
+/* animation for marquee to continously move left */
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-3000vw);
+  }
 }
