@@ -58,6 +58,7 @@ body {
 }
 /* fonts end */
 
+/* helper classes */
 .section {
   min-height: 98vh;
   margin-top: 10px;
@@ -76,12 +77,20 @@ body {
 }
 
 .bg-intro {
-  background-image: url(src/assets/m2.jpeg);
+  background-image: linear-gradient(
+      rgba(14, 14, 14, 0.2),
+      rgba(14, 14, 14, 0.2)
+    ),
+    url(src/assets/m2.jpeg);
   color: #fff;
 }
 
 .bg-matisse {
-  background-image: url(src/assets/matisse/m10.jpeg);
+  background-image: linear-gradient(
+      rgba(14, 14, 14, 0.2),
+      rgba(14, 14, 14, 0.2)
+    ),
+    url(src/assets/matisse/m10.jpeg);
 }
 
 .bg-cover {
@@ -97,7 +106,9 @@ body {
 .pushup {
   margin-bottom: 10%;
 }
+/* helper classes end */
 
+/* home page */
 .logo {
   display: block;
   text-align: center;
@@ -114,10 +125,10 @@ body {
 
 .marquee {
   position: absolute;
-  top: 74vh;
+  top: 70vh;
   left: 0;
   width: 100%;
-  font-size: 12vw;
+  font-size: 13em;
   font-family: anisette-std, sans-serif;
   font-weight: 300;
   mix-blend-mode: overlay;
@@ -135,6 +146,7 @@ body {
   /* this will let us add our animation */
   position: relative;
 }
+/* home page ends */
 
 .info-cont {
   position: absolute;

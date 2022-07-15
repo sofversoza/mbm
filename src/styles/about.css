@@ -1,0 +1,103 @@
+.bg-about {
+  background-image: linear-gradient(
+      rgba(14, 14, 14, 0.7),
+      rgba(14, 14, 14, 0.7)
+    ),
+    url(src/assets/MBM.png);
+  color: #fff;
+}
+
+.side-container {
+  margin: auto 8vw auto 7vw;
+}
+
+.subscribe {
+  background-color: rgba(52, 51, 52, 0.85);
+  min-height: 55vh;
+  min-width: 25vw;
+  border-radius: 1%;
+  display: flex;
+  align-items: center;
+}
+
+.about {
+  display: flex;
+  max-height: 100vh;
+  padding: 15% auto;
+}
+
+.about p {
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  margin-top: 5%;
+}
+
+.about h3 {
+  font-size: 3.8em;
+  font-family: "montserrat", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  margin-top: -4%;
+}
+
+.about h4 {
+  font-size: 0.83em;
+  font-family: "montserrat", sans-serif;
+  letter-spacing: 2px;
+  margin-top: -1%;
+}
+
+.about h5 {
+  font-size: 0.7em;
+  font-family: "montserrat", sans-serif;
+  letter-spacing: 0.5px;
+  margin-top: -2%;
+}
+
+.words-container {
+  max-width: 42vw;
+}
+
+.side-form {
+  width: 100%;
+  padding: 8%;
+  text-align: center;
+}
+
+.side-form h2 {
+  font-size: 1.35em;
+  font-family: "montserrat", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 3em;
+}
+
+.sign-up {
+  display: flex;
+}
+
+input {
+  background: none;
+  border: none;
+  border-bottom: solid 0.8px white;
+  font-size: 1.2em;
+}
+
+input:focus {
+  outline: none;
+}
+
+.email-input {
+  /* input will stretch out & fill the avail space */
+  flex: 1;
+  color: white;
+  font-size: 0.85em;
+  padding: 2%;
+}
+
+.submit {
+  font-size: 0.85em;
+  color: slategray;
+  cursor: pointer;
+}
