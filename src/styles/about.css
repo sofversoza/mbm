@@ -1,21 +1,16 @@
 .bg-about {
-  background-image: linear-gradient(
-      rgba(14, 14, 14, 0.7),
-      rgba(14, 14, 14, 0.7)
-    ),
-    url(src/assets/MBM.png);
-  color: #fff;
+  background: rgba(20, 17, 17, 0.5);
+  color: white;
 }
 
 .side-container {
-  margin: auto 8vw auto 7vw;
+  margin: auto 10vw auto 8vw;
 }
 
 .subscribe {
-  background-color: rgba(52, 51, 52, 0.85);
+  background-color: rgba(218, 216, 214, 0.45);
   min-height: 55vh;
   min-width: 25vw;
-  border-radius: 1%;
   display: flex;
   align-items: center;
 }
@@ -27,10 +22,11 @@
 }
 
 .about p {
-  font-size: 1.25em;
-  letter-spacing: 1px;
-  word-spacing: 3px;
+  font-size: 1.2em;
+  letter-spacing: 1.1px;
+  word-spacing: 3.5px;
   margin-top: 5%;
+  line-height: 1.1em;
 }
 
 .about h3 {
@@ -52,52 +48,70 @@
   font-size: 0.7em;
   font-family: "montserrat", sans-serif;
   letter-spacing: 0.5px;
-  margin-top: -2%;
+  margin-top: -3%;
+}
+
+.about span {
+  font-size: 0.8em;
+  font-family: "montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #4a5183;
 }
 
 .words-container {
   max-width: 42vw;
+  padding-bottom: 15%;
 }
 
 .side-form {
   width: 100%;
-  padding: 8%;
   text-align: center;
 }
 
 .side-form h2 {
-  font-size: 1.35em;
+  font-size: 1.5em;
   font-family: "montserrat", sans-serif;
   font-weight: 200;
   text-transform: uppercase;
-  margin-bottom: 3em;
 }
 
 .sign-up {
   display: flex;
+  padding: 10% 9%;
+  flex-direction: column;
 }
 
 input {
   background: none;
   border: none;
+}
+
+input[type="text"],
+input[type="email"] {
   border-bottom: solid 0.8px white;
-  font-size: 1.2em;
+  font-size: 1em;
+  font-family: "forma-djr-banner", sans-serif;
+  letter-spacing: 1px;
+  padding: 2%;
+  margin-bottom: 5.5%;
+}
+
+input[type="submit"] {
+  font-size: 0.9em;
+  color: white;
+  cursor: pointer;
+  font-family: "montserrat", sans-serif;
+  margin-top: 10%;
+}
+
+input::placeholder {
+  color: white;
+  font-family: "forma-djr-banner", sans-serif;
+  letter-spacing: 1px;
+  font-size: 0.9em;
 }
 
 input:focus {
   outline: none;
-}
-
-.email-input {
-  /* input will stretch out & fill the avail space */
-  flex: 1;
-  color: white;
-  font-size: 0.85em;
-  padding: 2%;
-}
-
-.submit {
-  font-size: 0.85em;
-  color: slategray;
-  cursor: pointer;
 }

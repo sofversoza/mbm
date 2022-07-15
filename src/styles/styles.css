@@ -4,6 +4,21 @@ body {
   font-weight: 200;
   font-size: 18px;
   line-height: 1.5;
+  overflow-x: hidden;
+}
+
+p,
+h3,
+h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+hr {
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  border-style: solid gray;
+  border-width: 0.6px;
 }
 
 /* fonts */
@@ -58,16 +73,19 @@ body {
 }
 /* fonts end */
 
-/* helper classes */
 .section {
   min-height: 98vh;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
   /* used with margin:auto below in .container for centering elements horizontally & vertically */
   display: flex;
   /* we're using position:absolute on our marquee element, its position needs to be in relation to this section */
   position: relative;
+}
+
+.half-section {
+  min-height: 45vh;
+  background-color: #ece8ea;
+  position: relative;
+  display: flex;
 }
 
 .container {
@@ -76,13 +94,11 @@ body {
   margin: auto;
 }
 
-.bg-intro {
-  background-image: linear-gradient(
-      rgba(14, 14, 14, 0.2),
-      rgba(14, 14, 14, 0.2)
-    ),
-    url(src/assets/m2.jpeg);
-  color: #fff;
+.half-container {
+  min-width: 98vw;
+  /* outline: 1px solid red; */
+  margin: auto;
+  overflow: hidden;
 }
 
 .bg-matisse {
@@ -106,47 +122,6 @@ body {
 .pushup {
   margin-bottom: 10%;
 }
-/* helper classes end */
-
-/* home page */
-.logo {
-  display: block;
-  text-align: center;
-  margin-top: -73.5%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 485px;
-  mix-blend-mode: overlay;
-}
-
-.logo img {
-  width: 100%;
-}
-
-.marquee {
-  position: absolute;
-  top: 70vh;
-  left: 0;
-  width: 100%;
-  font-size: 13em;
-  font-family: anisette-std, sans-serif;
-  font-weight: 300;
-  mix-blend-mode: overlay;
-  line-height: 1.5;
-  overflow: hidden;
-}
-
-.marquee span {
-  /* shorthand ( brief ) version of the animation css rule ( animations name, how long it'll take, repeat infinite times )*/
-  animation: moveLeft 200s infinite;
-  /* will ensure the text stays all on the same line */
-  white-space: nowrap;
-  /* our span is inline by default, so here we tell it to be block */
-  display: block;
-  /* this will let us add our animation */
-  position: relative;
-}
-/* home page ends */
 
 .info-cont {
   position: absolute;
