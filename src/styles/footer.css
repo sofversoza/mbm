@@ -1,3 +1,49 @@
+.footer-section {
+  min-height: 45vh;
+  background: #919299;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 98vw;
+  margin: auto;
+  padding: 3%;
+  overflow: hidden;
+}
+
+.flex-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.footer-container img {
+  width: 100%;
+}
+
+.footer-logo {
+  max-width: 20vw;
+  /* margin: auto; */
+  mix-blend-mode: overlay;
+}
+
+.hours h5 {
+  font-family: "montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  letter-spacing: -1.5px;
+}
+
+.copyright {
+  font-family: "montserrat", sans-serif;
+  font-weight: 200;
+  letter-spacing: -1px;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 10%;
+}
+
 @media (max-width: 780px) {
   .register .container {
     flex-direction: column;
