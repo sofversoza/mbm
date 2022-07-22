@@ -1,7 +1,7 @@
 # ✦ Mon Beau Monde Museum ✦
 `A MockSite built on CodeSandBox 🎲`
 
-This is what I am currently working on at the moment — unfinished.
+***This is what I am currently working on at the moment — unfinished.***
 
 I wanted to build and design a project using only HTML & CSS for the purpose of practicing and learning more about sematic HTML.
 
