@@ -61,6 +61,22 @@
   font-size: 0.8em;
 }
 
+.right-section a,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family: "montserrat", sans-serif;
+  font-size: 1em;
+  letter-spacing: 1.5px;
+  text-align: right;
+  margin-bottom: 10%;
+}
+
+.right-section {
+  margin-right: 2%;
+}
+
 .copyright {
   font-family: "montserrat", sans-serif;
   font-weight: 200;
